@@ -11,5 +11,21 @@
 	<classpathentry kind="lib" path="/beancopyutils.lib/lib/toolkit.sandbox.jtester-1.1.0.jar"/>
 	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.hamcrest-all-1.2-sources.jar"/>
 	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.hamcrest-all-1.2.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.jcommander-1.12-sources.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.jcommander-1.12.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.jmock-2.5.1-sources.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.jmock-2.5.1.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.jmock-legacy-2.5.1-sources.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.jmock-legacy-2.5.1.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.jmockit-0.999.10-sources.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.jmockit-0.999.10.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.junit-4.5-sources.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.junit-4.5.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.junit.hamcrest-1.1-sources.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.junit.hamcrest-1.1.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.mockito-all-1.8.0-sources.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.mockito-all-1.8.0.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/testerx.jtester-ext-1.0.4-SNAPSHOT-sources.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/testerx.jtester-ext-1.0.4-SNAPSHOT.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

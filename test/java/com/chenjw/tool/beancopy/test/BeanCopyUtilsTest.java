@@ -8,7 +8,6 @@ import java.util.Map;
 import org.jtester.testng.JTester;
 import org.testng.annotations.Test;
 
-import com.chenjw.tool.BeanCopyUtils;
 import com.chenjw.tool.beancopy.test.testpojo.ArrayPojo;
 import com.chenjw.tool.beancopy.test.testpojo.BasicNumberPojo;
 import com.chenjw.tool.beancopy.test.testpojo.DatePojo;
@@ -21,7 +20,8 @@ import com.chenjw.tool.beancopy.test.testpojo.EnumValuePojo;
 import com.chenjw.tool.beancopy.test.testpojo.NumberPojo;
 import com.chenjw.tool.beancopy.test.testpojo.SimplePojo;
 import com.chenjw.tool.beancopy.test.testpojo.StringNumberPojo;
-import com.chenjw.tool.beancopy.util.DateUtils;
+import com.chenjw.tools.BeanCopyUtils;
+import com.chenjw.tools.beancopy.util.DateUtils;
 
 public class BeanCopyUtilsTest extends JTester {
 

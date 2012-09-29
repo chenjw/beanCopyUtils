@@ -3,10 +3,10 @@ package com.chenjw.tool.beancopy.test;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Date;
 
-import com.chenjw.tool.BeanCopyUtils;
-import com.chenjw.tool.beancopy.SmartBeanCopier;
 import com.chenjw.tool.beancopy.test.testpojo.EnumPojo.TestEnum;
 import com.chenjw.tool.beancopy.test.testpojo.SimplePojo;
+import com.chenjw.tools.BeanCopyUtils;
+import com.chenjw.tools.beancopy.SmartBeanCopier;
 
 public class BeanCopyUtilsPerformanceTest {
 

@@ -1,7 +1,7 @@
 package com.chenjw.tool.beancopy.test.testpojo;
 
-import com.chenjw.tool.beancopy.annotation.EnumParseMethod;
-import com.chenjw.tool.beancopy.annotation.EnumValueMethod;
+import com.chenjw.tools.beancopy.annotation.EnumParseMethod;
+import com.chenjw.tools.beancopy.annotation.EnumValueMethod;
 
 public class EnumPojo {
 
