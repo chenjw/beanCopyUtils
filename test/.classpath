@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/beancopyutils.core"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/misc.javassist-3.9.0.GA-sources.zip"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/misc.javassist-3.9.0.GA.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.testng-6.0.1-sources.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.testng-6.0.1.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/toolkit.sandbox.jtester-1.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/toolkit.sandbox.jtester-1.1.0.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.hamcrest-all-1.2-sources.jar"/>
+	<classpathentry kind="lib" path="/beancopyutils.lib/lib/test.hamcrest-all-1.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
