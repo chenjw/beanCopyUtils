@@ -14,4 +14,6 @@
 	<li>已用为生产系统，有单元测试，稳定性可保障；</li>
 </ol>
 
+<p>更多介绍参见：https://github.com/chenjw/beanCopyUtils/wiki</p>
+
 =============
