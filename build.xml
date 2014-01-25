@@ -48,7 +48,7 @@
 	<target name="copy-lib">
  		<copy todir="${dist.dir}/beancopyutils/dependency">
     			<fileset dir="${base.dir}/lib/lib">
-				<include name="misc.javassist-3.9.0.GA.jar"/>
+				<include name="**/*.jar"/>
 			</fileset>
   		</copy>
 	</target>
