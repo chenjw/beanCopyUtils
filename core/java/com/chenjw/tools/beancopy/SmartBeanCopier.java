@@ -44,7 +44,6 @@ public class SmartBeanCopier {
 	public void copyProperties(Object dest, Object origin,
 			Map<String, String> nameMap, Class<?> destValueClazz) {
 		if (dest == null || origin == null) {
-			LOGGER.error("dest or origin is null");
 			return;
 		}
 		Copier copier = copierFactory.getCopier(dest.getClass(),
@@ -52,7 +51,7 @@ public class SmartBeanCopier {
 		// copy
 		try {
 			copier.copy(origin, dest, converterSelector);
-		} catch (Throwable e) {
+		} catch (Exception e) {
 			LOGGER.error("copy fail ", e);
 		}
 
