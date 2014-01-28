@@ -42,7 +42,6 @@ public class JavassistPojoToListCopierFactory implements CopierFactory {
 
         private Class<?>             destClazz;
         private Class<?>             originClazz;
-        private Map<String, String>  nameMap;
 
         private Class<?>             defaultDestValueClazz;
         private ClassGenerator       clazzGenerator;
@@ -52,7 +51,6 @@ public class JavassistPojoToListCopierFactory implements CopierFactory {
                                        Map<String, String> nameMap, Class<?> defaultDestValueClazz) {
             this.destClazz = destClazz;
             this.originClazz = originClazz;
-            this.nameMap = nameMap;
             this.defaultDestValueClazz = defaultDestValueClazz;
         }
 
