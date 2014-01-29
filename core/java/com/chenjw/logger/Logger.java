@@ -1,6 +1,5 @@
 package com.chenjw.logger;
 
-
 /**
  * 日志包装
  * 
@@ -8,81 +7,80 @@ package com.chenjw.logger;
  * 
  */
 public class Logger {
-    
+    private org.apache.log4j.Logger logger;
+
     public static Logger getLogger(Class<?> clazz) {
-        return new Logger();
+        return new Logger(clazz);
     }
 
     public static Logger getLogger(String name) {
-        return new Logger();
+        return new Logger(name);
     }
-    
-    public Logger() {
 
+    public Logger(Class<?> clazz) {
+        this.logger = org.apache.log4j.Logger.getLogger(clazz);
+    }
+
+    public Logger(String name) {
+        this.logger = org.apache.log4j.Logger.getLogger(name);
     }
 
     public boolean isDebugEnabled() {
-        return true;
+        return logger.isDebugEnabled();
     }
-    
+
     public boolean isInfoEnabled() {
-        return true;
+        return logger.isInfoEnabled();
     }
 
     // /////////
 
     public void trace(Object key) {
-        System.out.println(key);
+        logger.trace(key);
     }
 
     public void trace(Object key, Throwable cause) {
-        System.out.println(key);
-        cause.printStackTrace();
+        logger.trace(key, cause);
     }
 
     public void debug(Object key) {
-        System.out.println(key);
+        logger.debug(key);
     }
 
     public void debug(Object key, Throwable cause) {
-        System.out.println(key);
-        cause.printStackTrace();
+        logger.debug(key, cause);
     }
 
     public void info(Object key) {
-        System.out.println(key);
+        logger.info(key);
     }
 
     public void info(Object key, Throwable cause) {
-        System.out.println(key);
-        cause.printStackTrace();
+        logger.info(key, cause);
     }
 
     public void warn(Object key) {
-        System.out.println(key);
+        logger.warn(key);
     }
 
     public void warn(Object key, Throwable cause) {
-        System.out.println(key);
-        cause.printStackTrace();
+        logger.warn(key, cause);
     }
 
     public void error(Object key) {
-        System.out.println(key);
+        logger.error(key);
     }
 
     public void error(Object key, Throwable cause) {
-        System.out.println(key);
-        cause.printStackTrace();
+        logger.error(key, cause);
     }
 
     public void fatal(Object key) {
-        System.out.println(key);
+        logger.fatal(key);
     }
 
     public void fatal(Object key, Throwable cause) {
-        System.out.println(key);
-        cause.printStackTrace();
+        logger.fatal(key, cause);
     }
 
 }

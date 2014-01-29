@@ -9,11 +9,11 @@ package com.chenjw.logger;
 public class LoggerFactory {
 
 	public static Logger getLogger(Class<?> clazz) {
-		return new Logger();
+		return new Logger(clazz);
 	}
 
 	public static Logger getLogger(String name) {
-		return new Logger();
+		return new Logger(name);
 	}
 
 }
