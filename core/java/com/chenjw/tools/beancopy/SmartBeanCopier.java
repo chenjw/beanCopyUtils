@@ -2,9 +2,6 @@ package com.chenjw.tools.beancopy;
 
 import java.util.Map;
 
-import com.chenjw.logger.Logger;
-import com.chenjw.logger.LoggerFactory;
-
 /**
  * 实现通用的bean拷贝，可以存在多个实例，用于支持不同的拷贝规则
  * 
@@ -13,8 +10,7 @@ import com.chenjw.logger.LoggerFactory;
  */
 public class SmartBeanCopier {
 
-	private static final Logger LOGGER = LoggerFactory
-			.getLogger("beanCopyLogger");
+
 	// copier不可定制，因此多个SmartBeanCopier实例共用一个copierFactory
 	private static final CopierFactory copierFactory = new CopierSelector();
 	// converter可定制，因此各个实例使用各自的converter
@@ -52,7 +48,7 @@ public class SmartBeanCopier {
 		try {
 			copier.copy(origin, dest, converterSelector);
 		} catch (Exception e) {
-			LOGGER.error("copy fail ", e);
+			e.printStackTrace();
 		}
 
 	}

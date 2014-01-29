@@ -3,8 +3,6 @@ package com.chenjw.tools.beancopy;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.chenjw.logger.Logger;
-import com.chenjw.logger.LoggerFactory;
 import com.chenjw.tools.BeanCopyUtils;
 
 /**
@@ -14,8 +12,7 @@ import com.chenjw.tools.BeanCopyUtils;
  */
 public class ConverterSelector implements Converter {
 
-	private static final Logger LOGGER = LoggerFactory
-			.getLogger("beanCopyLogger");
+
 	// 字段值转换器映射
 	private Map<ConverterKey, ClassifiedConverter> converterMap = new HashMap<ConverterKey, ClassifiedConverter>();
 
@@ -57,19 +54,9 @@ public class ConverterSelector implements Converter {
 						origin, originClazz, destClazz, this);
 			} else {
 				r = converter.convert(origin, originClazz, destClazz);
-				if (LOGGER.isDebugEnabled()) {
-					LOGGER.debug("convert(" + origin + ", " + originClazz
-							+ ", " + destClazz + ") returns " + r + " ("
-							+ (r == null ? null : r.getClass()) + ")");
-				}
 				return r;
 			}
 		} catch (Exception e) {
-			if (LOGGER.isDebugEnabled()) {
-				LOGGER.debug("convert error converter=" + converter
-						+ ",originClazz=" + originClazz + ",destClazz="
-						+ destClazz, e);
-			}
 			return null;
 		}
 	}
