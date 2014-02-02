@@ -102,7 +102,6 @@ public class JavassistPojoToListCopierFactory implements CopierFactory {
 
             Expression setterInvoke = new InvokeExpression(CopierConstants.LIST_ADD_METHOD,
                 destField, new Expression[] {convertInvoke });
-            System.out.println(setterInvoke.getCode());
             methodGenerator.addExpression(setterInvoke);
         }
 
