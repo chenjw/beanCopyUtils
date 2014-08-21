@@ -11,7 +11,7 @@
 	<li>单个字段无法拷贝不抛异常且不影响其他字段；</li>
 	<li>基于字节码预编译实现，比较apache-commons的BeanUtils性能好很多，功能上又较cglib的beanCopier工具类强；</li>
 	<li>不支持嵌套类的拷贝；</li>
-	<li>已用为生产系统，有单元测试，稳定性可保障；</li>
+	<li>有单元测试，稳定性可保障；</li>
 </ol>
 
 <p>更多介绍参见：https://github.com/chenjw/beanCopyUtils/wiki</p>
